@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+venv/
+.env
+
+# Spark / Hadoop
+metastore_db/
+derby.log
+spark-warehouse/
+
+# Project runtime output (do not commit generated data)
+data/stream_input/
+data/stream_output/
+data/checkpoints/
+data/_windowed_intermediate/
+
+# Keep the static sample dataset
+!data/iomt_health_sample.csv
+
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.iml
