@@ -2,7 +2,7 @@
 
 **Scenario B - Hospital Patient Monitoring**
 
-Name: Priyankakumari Gupta 
+Name: Priyankakumari Gupta  
 Student ID: 101008820
 
 Dataset: IoMT Health Monitoring (Kaggle) - used `data/iomt_health_sample.csv`, 50,000 rows, mapped down to 20 patient ids (P001-P020)
@@ -23,6 +23,8 @@ spark-streaming-assignment/
 │   ├── stream_input/            <- simulator drops files here, spark reads from here
 │   ├── stream_output/           <- alert csv output goes here
 │   └── checkpoints/             <- spark checkpoints (auto created)
+├── screenshot/
+│   └── alert_console_output.png   <- screenshot of the alert output firing
 └── src/
     ├── patient_monitor_stream.py   <- the actual streaming job
     ├── stream_simulator.py         <- fakes a live feed by dropping csv chunks
